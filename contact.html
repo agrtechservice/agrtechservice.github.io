@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Vertex Solutions for enterprise software development, cloud migration, and technical consulting services">
+    <title>Contact Us - AGR Tech</title>
+    <link rel="icon" type="image/png" href="images/Logo.png">
+    <link rel="shortcut icon" type="image/png" href="images/Logo.png">
+    <link rel="apple-touch-icon" href="images/Logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0ea5e9',
+                        secondary: '#06b6d4',
+                        dark: '#0f172a',
+                        'dark-light': '#1e293b',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark text-gray-100">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-dark-light/95 backdrop-blur-sm z-50 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center group">
+                        <img src="images/Logo.png" alt="AGR Tech Logo" class="h-12 transition-transform group-hover:scale-110">
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-300 hover:text-primary transition-colors">Home</a>
+                    <a href="about.html" class="text-gray-300 hover:text-primary transition-colors">About</a>
+                    <a href="services.html" class="text-gray-300 hover:text-primary transition-colors">Services</a>
+                    <a href="contact.html" class="text-primary transition-colors">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-light border-t border-gray-800">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-300 hover:text-primary hover:bg-dark transition-colors">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-300 hover:text-primary hover:bg-dark transition-colors">About</a>
+                <a href="services.html" class="block px-3 py-2 text-gray-300 hover:text-primary hover:bg-dark transition-colors">Services</a>
+                <a href="contact.html" class="block px-3 py-2 text-primary hover:bg-dark transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-16 px-4 bg-gradient-to-br from-dark via-dark-light to-dark overflow-hidden">
+        <div class="absolute top-10 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-10 right-10 w-80 h-80 bg-secondary/10 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                    Let's Connect
+                </span>
+            </h1>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                Ready to transform your business with enterprise software solutions? Get in touch with our team
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="glassmorphism p-8 rounded-2xl border border-gray-800 card-glow scroll-animate">
+                    <h2 class="text-3xl font-bold mb-6">Send Us a Message</h2>
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-semibold text-gray-300 mb-2">Full Name *</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                required
+                                class="w-full px-4 py-3 bg-dark border border-gray-700 rounded-lg text-white focus:outline-none focus:border-primary transition-colors"
+                                placeholder="John Doe"
+                            >
+                            <span class="error-message text-red-400 text-sm hidden" id="name-error"></span>
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-gray-300 mb-2">Email Address *</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                required
+                                class="w-full px-4 py-3 bg-dark border border-gray-700 rounded-lg text-white focus:outline-none focus:border-primary transition-colors"
+                                placeholder="john@company.com"
+                            >
+                            <span class="error-message text-red-400 text-sm hidden" id="email-error"></span>
+                        </div>
+
+                        <div>
+                            <label for="phone" class="block text-sm font-semibold text-gray-300 mb-2">Phone Number</label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone"
+                                class="w-full px-4 py-3 bg-dark border border-gray-700 rounded-lg text-white focus:outline-none focus:border-primary transition-colors"
+                                placeholder="+977-XXX-XXXXXXX"
+                            >
+                        </div>
+
+                        <div>
+                            <label for="company" class="block text-sm font-semibold text-gray-300 mb-2">Company Name</label>
+                            <input 
+                                type="text" 
+                                id="company" 
+                                name="company"
+                                class="w-full px-4 py-3 bg-dark border border-gray-700 rounded-lg text-white focus:outline-none focus:border-primary transition-colors"
+                                placeholder="Your Company"
+                            >
+                        </div>
+
+                        <div>
+                            <label for="service" class="block text-sm font-semibold text-gray-300 mb-2">Service Interest *</label>
+                            <select 
+                                id="service" 
+                                name="service" 
+                                required
+                                class="w-full px-4 py-3 bg-dark border border-gray-700 rounded-lg text-white focus:outline-none focus:border-primary transition-colors"
+                            >
+                                <option value="">Select a service...</option>
+                                <option value="enterprise">Enterprise Software Development</option>
+                                <option value="cloud">Cloud Migration & ECM</option>
+                                <option value="ai">AI/ML Integration</option>
+                                <option value="consulting">Technical Consulting</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message text-red-400 text-sm hidden" id="service-error"></span>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-semibold text-gray-300 mb-2">Message *</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                rows="5" 
+                                required
+                                class="w-full px-4 py-3 bg-dark border border-gray-700 rounded-lg text-white focus:outline-none focus:border-primary transition-colors resize-none"
+                                placeholder="Tell us about your project requirements..."
+                            ></textarea>
+                            <span class="error-message text-red-400 text-sm hidden" id="message-error"></span>
+                        </div>
+
+                        <button 
+                            type="submit" 
+                            class="w-full px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-lg hover:shadow-2xl hover:shadow-primary/50 transition-all transform hover:-translate-y-2 hover:scale-105 pulse-glow-animation"
+                        >
+                            Send Message
+                        </button>
+
+                        <div id="form-success" class="hidden bg-green-500/20 border border-green-500 text-green-400 px-4 py-3 rounded-lg">
+                            Thank you! Your message has been sent successfully. We'll get back to you soon.
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6">Get In Touch</h2>
+                        <p class="text-gray-300 text-lg mb-8">
+                            Whether you need enterprise software development, cloud migration expertise, or technical consulting, our team is ready to help you achieve your goals.
+                        </p>
+                    </div>
+
+                    <!-- Contact Cards -->
+                    <div class="space-y-6">
+                        <div class="glassmorphism p-6 rounded-xl border border-gray-800 hover:border-primary transition-all card-glow hover-lift scroll-animate">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-white mb-2">Office Location</h3>
+                                    <p class="text-gray-400">Lalitpur, Nepal</p>
+                                    <p class="text-gray-400 text-sm mt-1">Serving clients globally</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="glassmorphism p-6 rounded-xl border border-gray-800 hover:border-primary transition-all card-glow hover-lift scroll-animate">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-white mb-2">Phone</h3>
+                                    <p class="text-gray-400">+977-984-1183620</p>
+                                    <p class="text-gray-400">+977-984-1688656</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="glassmorphism p-6 rounded-xl border border-gray-800 hover:border-primary transition-all card-glow hover-lift scroll-animate">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-white mb-2">Email</h3>
+                                    <p class="text-gray-400">info@agrtechs.com</p>
+                                    <p class="text-gray-400">akarshan@agrtechs.com</p>
+                                    <p class="text-gray-400">gopal@agrtechs.com</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="glassmorphism p-6 rounded-xl border border-gray-800 hover:border-primary transition-all card-glow hover-lift scroll-animate">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-white mb-2">Business Hours</h3>
+                                    <p class="text-gray-400">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                    <p class="text-gray-400 text-sm mt-1">Nepal Standard Time (NPT)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Why Contact Us -->
+                    <div class="bg-gradient-to-br from-primary/10 to-secondary/10 p-6 rounded-xl border border-primary/30">
+                        <h3 class="font-semibold text-white mb-4">Why Work With Us?</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                10+ years of enterprise software expertise
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Master's level technical leadership
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Proven track record with global clients
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-primary mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Agile methodologies & rapid delivery
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-light border-t border-gray-800 py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-4">
+                        AGR Tech Pvt. Ltd.
+                    </h3>
+                    <p class="text-gray-400">Enterprise software excellence through innovation and expertise</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-primary transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-primary transition-colors">About</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-primary transition-colors">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#enterprise" class="text-gray-400 hover:text-primary transition-colors">Enterprise Development</a></li>
+                        <li><a href="services.html#cloud" class="text-gray-400 hover:text-primary transition-colors">Cloud Migration</a></li>
+                        <li><a href="services.html#ai" class="text-gray-400 hover:text-primary transition-colors">AI/ML Solutions</a></li>
+                        <li><a href="services.html#consulting" class="text-gray-400 hover:text-primary transition-colors">Technical Consulting</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Lalitpur, Nepal</li>
+                        <li>+977-984-1183620</li>
+                        <li>info@agrtechs.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 AGR Tech Pvt. Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

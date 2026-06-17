@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet the leadership team behind Vertex Solutions - experienced software engineers with 10+ years of enterprise expertise">
+    <title>About Us - AGR Tech</title>
+    <link rel="icon" type="image/png" href="images/Logo.png">
+    <link rel="shortcut icon" type="image/png" href="images/Logo.png">
+    <link rel="apple-touch-icon" href="images/Logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0ea5e9',
+                        secondary: '#06b6d4',
+                        dark: '#0f172a',
+                        'dark-light': '#1e293b',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark text-gray-100">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-dark-light/95 backdrop-blur-sm z-50 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center group">
+                        <img src="images/Logo.png" alt="AGR Tech Logo" class="h-12 transition-transform group-hover:scale-110">
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-300 hover:text-primary transition-colors">Home</a>
+                    <a href="about.html" class="text-primary transition-colors">About</a>
+                    <a href="services.html" class="text-gray-300 hover:text-primary transition-colors">Services</a>
+                    <a href="contact.html" class="text-gray-300 hover:text-primary transition-colors">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-light border-t border-gray-800">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-300 hover:text-primary hover:bg-dark transition-colors">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-primary hover:bg-dark transition-colors">About</a>
+                <a href="services.html" class="block px-3 py-2 text-gray-300 hover:text-primary hover:bg-dark transition-colors">Services</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-300 hover:text-primary hover:bg-dark transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-16 px-4 bg-gradient-to-br from-dark via-dark-light to-dark overflow-hidden">
+        <div class="absolute top-10 right-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-10 left-10 w-80 h-80 bg-secondary/10 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                    About AGR Techs
+                </span>
+            </h1>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                Pioneering enterprise software solutions with 10+ years of proven expertise in delivering mission-critical systems
+            </p>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6">
+                        Our <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Mission</span>
+                    </h2>
+                    <p class="text-gray-300 text-lg mb-6">
+                        At AGR Techs, we transform complex business challenges into scalable technical solutions. Our mission is to empower enterprises with cutting-edge software engineering, AI-driven automation, and cloud-native architectures that deliver measurable ROI and competitive advantage.
+                    </p>
+                    <p class="text-gray-300 text-lg mb-6">
+                        Founded by three senior software engineers with master's degrees in Computer Science and over a decade of combined hands-on experience, AGR Techs brings together strategic vision, technical leadership, and operational excellence. We've delivered mission-critical systems for banks, financial institutions, multinational corporations, and innovative startups globally.
+                    </p>
+                    <p class="text-gray-300 text-lg">
+                        Our approach combines technical excellence with business acumen. We don't just write code—we architect enterprise-grade solutions that scale, perform, and evolve with your organization's growth trajectory.
+                    </p>
+                </div>
+                <div class="relative scroll-animate float-animation">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-2xl transform -rotate-3 blur-xl"></div>
+                    <div class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-30"></div>
+                    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800" alt="Mission" class="relative rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Profiles -->
+    <section class="py-20 px-4 bg-dark-light">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                        Leadership Team
+                    </span>
+                </h2>
+                <p class="text-gray-400 text-lg">Meet the technical minds driving innovation at Vertex Solutions</p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Co-Founder 1: Rohit Pandey - CEO -->
+                <div class="bg-dark rounded-2xl border border-gray-800 overflow-hidden hover:border-primary transition-all card-glow hover-lift scroll-animate">
+                    <div class="h-64 bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
+                        <img src="images/ceo.png" alt="Rohit Pandey" class="w-52 h-52 rounded-full object-cover border-4 border-dark shadow-xl">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-white mb-2">Rohit Pandey</h3>
+                        <p class="text-primary font-semibold mb-4">Co-Founder & Chief Executive Officer (CEO)</p>
+                        <p class="text-gray-300 mb-6">
+                            Rohit brings strategic vision and business leadership to AGR Techs. With extensive experience in enterprise software delivery and client relationship management, he drives the company's growth strategy and ensures alignment between technical capabilities and market opportunities.
+                        </p>
+                        <p class="text-gray-300 mb-6">
+                            As CEO, Rohit oversees business development, strategic partnerships, and organizational growth. His leadership ensures that AGR Techs maintains its commitment to technical excellence while scaling operations to serve global enterprise clients.
+                        </p>
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-white mb-3">Core Expertise:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Strategic Leadership</span>
+                                <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Business Development</span>
+                                <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Client Relations</span>
+                                <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Enterprise Solutions</span>
+                            </div>
+                        </div>
+                        <a href="mailto:rohit@agrtechs.com" class="inline-flex items-center text-primary hover:text-secondary transition-colors">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            rohit@agrtechs.com
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Co-Founder 2: Akarshan Maharjan - CTO -->
+                <div class="bg-dark rounded-2xl border border-gray-800 overflow-hidden hover:border-primary transition-all card-glow hover-lift scroll-animate">
+                    <div class="h-64 bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
+                        <img src="images/cto.png" alt="Akarshan Maharjan" class="w-52 h-52 rounded-full object-cover border-4 border-dark shadow-xl">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-white mb-2">Akarshan Maharjan</h3>
+                        <p class="text-primary font-semibold mb-4">Co-Founder & Chief Technology Officer (CTO)</p>
+                        <p class="text-gray-300 mb-6">
+                            As CTO, Akarshan drives the technical vision and innovation strategy at AGR Techs. With over 10 years of enterprise software engineering expertise in .NET, C#, and Salesforce, he brings deep technical knowledge and architectural leadership. His Master's in Computer Science focused on Deep Learning for Intrusion Detection Systems.
+                        </p>
+                        <p class="text-gray-300 mb-6">
+                            Akarshan has pioneered AIOps initiatives, engineering specialized AI agents for automated code review and quality analysis. His technical leadership includes managing 10+ engineer teams, architecting enterprise-grade applications for banks and financial institutions, and delivering complex cloud migration solutions. He ensures AGR Techs stays at the forefront of technology innovation.
+                        </p>
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-white mb-3">Core Expertise:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Salesforce & Apex</span>
+                                <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">.NET & C#</span>
+                                <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">AI/ML Integration</span>
+                                <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Enterprise Architecture</span>
+                                <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Team Leadership</span>
+                            </div>
+                        </div>
+                        <a href="mailto:akarshan@agrtechs.com" class="inline-flex items-center text-primary hover:text-secondary transition-colors">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            akarshan@agrtechs.com
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Co-Founder 3: Gopal Dahal - COO -->
+                <div class="bg-dark rounded-2xl border border-gray-800 overflow-hidden hover:border-primary transition-all card-glow hover-lift scroll-animate">
+                    <div class="h-64 bg-gradient-to-br from-secondary/20 to-primary/20 flex items-center justify-center">
+                        <img src="images/coo.png" alt="Gopal Dahal" class="w-52 h-52 rounded-full object-cover border-4 border-dark shadow-xl">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-white mb-2">Gopal Dahal</h3>
+                        <p class="text-primary font-semibold mb-4">Co-Founder & Chief Operating Officer (COO)</p>
+                        <p class="text-gray-300 mb-6">
+                            As COO, Gopal ensures operational excellence and delivery quality at AGR Techs. With 10+ years of software engineering experience, a Master's in Computer Engineering (CGPA: 3.94), and Microsoft certifications, he combines technical expertise with operational leadership.
+                        </p>
+                        <p class="text-gray-300 mb-6">
+                            Gopal oversees project delivery, quality assurance, and team operations. His expertise in enterprise ECM migration (Tzunami Deployer), financial automation platforms (XmartCredit), and cloud-to-cloud migration ensures AGR Techs delivers on time and exceeds client expectations. Recognized multiple times as "Best Employee of the Quarter," his operational leadership drives efficiency and excellence.
+                        </p>
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-white mb-3">Core Expertise:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">C# & .NET Core</span>
+                                <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">SharePoint Migration</span>
+                                <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">Microservices</span>
+                                <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">Agile & Scrum</span>
+                                <span class="px-3 py-1 bg-secondary/20 text-secondary rounded-full text-sm">Team Leadership</span>
+                            </div>
+                        </div>
+                        <a href="mailto:gopal@agrtechs.com" class="inline-flex items-center text-primary hover:text-secondary transition-colors">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            gopal@agrtechs.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Values -->
+    <section class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">
+                    Our <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Core Values</span>
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-8 bg-dark-light rounded-xl border border-gray-800">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Technical Excellence</h3>
+                    <p class="text-gray-400">We maintain the highest standards of code quality, architecture design, and engineering practices</p>
+                </div>
+
+                <div class="text-center p-8 bg-dark-light rounded-xl border border-gray-800">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Innovation First</h3>
+                    <p class="text-gray-400">We embrace emerging technologies like AI/ML and cloud-native architectures to stay ahead</p>
+                </div>
+
+                <div class="text-center p-8 bg-dark-light rounded-xl border border-gray-800">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Client Partnership</h3>
+                    <p class="text-gray-400">Your success is our success—we build long-term relationships based on trust and results</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-light border-t border-gray-800 py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-4">
+                        AGR Tech Pvt. Ltd.
+                    </h3>
+                    <p class="text-gray-400">Enterprise software excellence through innovation and expertise</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-primary transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-primary transition-colors">About</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-primary transition-colors">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#enterprise" class="text-gray-400 hover:text-primary transition-colors">Enterprise Development</a></li>
+                        <li><a href="services.html#cloud" class="text-gray-400 hover:text-primary transition-colors">Cloud Migration</a></li>
+                        <li><a href="services.html#ai" class="text-gray-400 hover:text-primary transition-colors">AI/ML Solutions</a></li>
+                        <li><a href="services.html#consulting" class="text-gray-400 hover:text-primary transition-colors">Technical Consulting</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Lalitpur, Nepal</li>
+                        <li>+977-984-1183620</li>
+                        <li>info@agrtechs.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 AGR Tech Pvt. Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

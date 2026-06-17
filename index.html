@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enterprise software solutions, AI-driven development, and cloud migration services by industry-leading experts">
+    <title>AGR Tech - Enterprise Software & IT Consulting</title>
+    <link rel="icon" type="image/png" href="images/Logo.png">
+    <link rel="shortcut icon" type="image/png" href="images/Logo.png">
+    <link rel="apple-touch-icon" href="images/Logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0ea5e9',
+                        secondary: '#06b6d4',
+                        dark: '#0f172a',
+                        'dark-light': '#1e293b',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark text-gray-100">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-dark-light/95 backdrop-blur-sm z-50 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center group">
+                        <img src="images/Logo.png" alt="AGR Tech Logo" class="h-12 transition-transform group-hover:scale-110">
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-300 hover:text-primary transition-colors">Home</a>
+                    <a href="about.html" class="text-gray-300 hover:text-primary transition-colors">About</a>
+                    <a href="services.html" class="text-gray-300 hover:text-primary transition-colors">Services</a>
+                    <a href="contact.html" class="text-gray-300 hover:text-primary transition-colors">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-light border-t border-gray-800">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-300 hover:text-primary hover:bg-dark transition-colors">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-300 hover:text-primary hover:bg-dark transition-colors">About</a>
+                <a href="services.html" class="block px-3 py-2 text-gray-300 hover:text-primary hover:bg-dark transition-colors">Services</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-300 hover:text-primary hover:bg-dark transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 px-4 overflow-hidden">
+        <!-- Animated Background Orbs -->
+        <div class="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
+        <div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-dark to-secondary/10"></div>
+        <div class="absolute inset-0 opacity-20" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920'); background-size: cover; background-position: center;"></div>
+        
+        <div class="relative max-w-7xl mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+                <span class="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
+                    Transform Your Business with Technology
+                </span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                Enterprise software solutions, AI-driven automation, and cloud migration expertise. Trusted by banks, financial institutions, and global enterprises.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-lg hover:shadow-2xl hover:shadow-primary/50 transition-all transform hover:-translate-y-2 hover:scale-105 pulse-glow-animation">
+                    Get a Consultation
+                </a>
+                <a href="services.html" class="px-8 py-4 glassmorphism border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-all transform hover:-translate-y-2 hover:scale-105">
+                    Our Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Services Grid -->
+    <section class="py-20 px-4 bg-dark-light">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                        Core Capabilities
+                    </span>
+                </h2>
+                <p class="text-gray-400 text-lg">Specialized IT solutions tailored for enterprise success</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="group p-6 bg-dark rounded-xl border border-gray-800 hover:border-primary transition-all card-glow hover-lift scroll-animate">
+                    <div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center mb-4 pulse-glow-animation">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Enterprise Software Development</h3>
+                    <p class="text-gray-400">Custom .NET, C#, and Salesforce solutions for banks, financial institutions, and Fortune 500 companies</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="group p-6 bg-dark rounded-xl border border-gray-800 hover:border-primary transition-all card-glow hover-lift scroll-animate">
+                    <div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center mb-4 pulse-glow-animation">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Cloud Migration & ECM</h3>
+                    <p class="text-gray-400">SharePoint migration expertise across 10+ ECM platforms including Hitachi, Documentum, and Confluence</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="group p-6 bg-dark rounded-xl border border-gray-800 hover:border-primary transition-all card-glow hover-lift scroll-animate">
+                    <div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center mb-4 pulse-glow-animation">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">AI/ML Integration</h3>
+                    <p class="text-gray-400">AIOps automation, intelligent code review agents, and ML-driven quality analysis using Datadog and modern frameworks</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="group p-6 bg-dark rounded-xl border border-gray-800 hover:border-primary transition-all card-glow hover-lift scroll-animate">
+                    <div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center mb-4 pulse-glow-animation">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Technical Leadership</h3>
+                    <p class="text-gray-400">Proven track record leading 10+ engineer teams with agile methodologies and end-to-end project delivery</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                        Why <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Choose Us</span>
+                    </h2>
+                    <p class="text-gray-400 text-lg mb-8">
+                        We combine deep technical expertise with proven enterprise delivery experience to transform your business challenges into scalable solutions.
+                    </p>
+                    
+                    <div class="space-y-6 scroll-animate">
+                        <div class="flex items-start scroll-animate glassmorphism p-4 rounded-lg hover:border hover:border-primary/30 transition-all" style="animation-delay: 0.1s;">
+                            <div class="w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center mr-4 flex-shrink-0 pulse-glow-animation">
+                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">10+ Years Enterprise Experience</h3>
+                                <p class="text-gray-400">Decade-long partnership with American MNC delivering mission-critical software to global clients</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start scroll-animate glassmorphism p-4 rounded-lg hover:border hover:border-primary/30 transition-all" style="animation-delay: 0.2s;">
+                            <div class="w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center mr-4 flex-shrink-0 pulse-glow-animation">
+                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Master's Level Expertise</h3>
+                                <p class="text-gray-400">Advanced degrees in Computer Science with Microsoft certifications and continuous learning culture</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start scroll-animate glassmorphism p-4 rounded-lg hover:border hover:border-primary/30 transition-all" style="animation-delay: 0.3s;">
+                            <div class="w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center mr-4 flex-shrink-0 pulse-glow-animation">
+                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Agile & Modern Methodologies</h3>
+                                <p class="text-gray-400">Scrum-based delivery, CI/CD pipelines, and DevOps practices ensuring rapid, reliable deployments</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start scroll-animate glassmorphism p-4 rounded-lg hover:border hover:border-primary/30 transition-all" style="animation-delay: 0.4s;">
+                            <div class="w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center mr-4 flex-shrink-0 pulse-glow-animation">
+                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Full-Stack Capabilities</h3>
+                                <p class="text-gray-400">From database design to cloud deployment, we handle every layer of your technology stack</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative scroll-animate float-animation">
+                    <div class="absolute inset-0 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-2xl transform rotate-3 blur-xl"></div>
+                    <div class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-30"></div>
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800" alt="Team collaboration" class="relative rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative py-20 px-4 overflow-hidden gradient-bg-animated">
+        <!-- Decorative Elements -->
+        <div class="absolute top-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+        
+        <div class="relative max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white animate-fade-in">Ready to Transform Your Business?</h2>
+            <p class="text-xl text-white/90 mb-8">Let's discuss how our enterprise software expertise can accelerate your digital transformation</p>
+            <a href="contact.html" class="inline-block px-8 py-4 bg-white text-primary font-semibold rounded-lg hover:shadow-2xl hover:scale-110 transition-all transform pulse-glow-animation">
+                Schedule a Consultation
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-light border-t border-gray-800 py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-4">
+                        AGR Tech Pvt. Ltd.
+                    </h3>
+                    <p class="text-gray-400">Enterprise software excellence through innovation and expertise</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-primary transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-primary transition-colors">About</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-primary transition-colors">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#enterprise" class="text-gray-400 hover:text-primary transition-colors">Enterprise Development</a></li>
+                        <li><a href="services.html#cloud" class="text-gray-400 hover:text-primary transition-colors">Cloud Migration</a></li>
+                        <li><a href="services.html#ai" class="text-gray-400 hover:text-primary transition-colors">AI/ML Solutions</a></li>
+                        <li><a href="services.html#consulting" class="text-gray-400 hover:text-primary transition-colors">Technical Consulting</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Lalitpur, Nepal</li>
+                        <li>+977-984-1183620</li>
+                        <li>info@agrtechs.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 AGR Tech Pvt. Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

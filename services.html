@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive IT services including enterprise software development, cloud migration, AI/ML integration, and technical consulting">
+    <title>Services - AGR Tech</title>
+    <link rel="icon" type="image/png" href="images/Logo.png">
+    <link rel="shortcut icon" type="image/png" href="images/Logo.png">
+    <link rel="apple-touch-icon" href="images/Logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0ea5e9',
+                        secondary: '#06b6d4',
+                        dark: '#0f172a',
+                        'dark-light': '#1e293b',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark text-gray-100">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-dark-light/95 backdrop-blur-sm z-50 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center group">
+                        <img src="images/Logo.png" alt="AGR Tech Logo" class="h-12 transition-transform group-hover:scale-110">
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-300 hover:text-primary transition-colors">Home</a>
+                    <a href="about.html" class="text-gray-300 hover:text-primary transition-colors">About</a>
+                    <a href="services.html" class="text-primary transition-colors">Services</a>
+                    <a href="contact.html" class="text-gray-300 hover:text-primary transition-colors">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-light border-t border-gray-800">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-300 hover:text-primary hover:bg-dark transition-colors">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-300 hover:text-primary hover:bg-dark transition-colors">About</a>
+                <a href="services.html" class="block px-3 py-2 text-primary hover:bg-dark transition-colors">Services</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-300 hover:text-primary hover:bg-dark transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 px-4 bg-gradient-to-br from-dark via-dark-light to-dark">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                    Our Services
+                </span>
+            </h1>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                Comprehensive IT solutions engineered for enterprise performance, scalability, and innovation
+            </p>
+        </div>
+    </section>
+
+    <!-- Enterprise Software Development -->
+    <section id="enterprise" class="py-20 px-4 bg-dark-light">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-block px-4 py-2 bg-primary/20 text-primary rounded-full text-sm font-semibold mb-4">
+                        CORE SERVICE
+                    </div>
+                    <h2 class="text-4xl font-bold mb-6">
+                        Enterprise Software <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Development</span>
+                    </h2>
+                    <p class="text-gray-300 text-lg mb-6">
+                        We architect and deliver mission-critical enterprise applications that power banks, financial institutions, and Fortune 500 companies. Our full-stack expertise spans the entire software development lifecycle.
+                    </p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-primary mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-semibold text-white mb-1">Custom .NET & C# Applications</h3>
+                                <p class="text-gray-400">WinForms, WPF, ASP.NET MVC, .NET Core, REST APIs, and microservices architecture</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-primary mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-semibold text-white mb-1">Salesforce Platform Development</h3>
+                                <p class="text-gray-400">Apex programming, Lightning components, CAPA, Audit, Training modules, and QMS/EQMS solutions</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-primary mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-semibold text-white mb-1">Financial Technology Solutions</h3>
+                                <p class="text-gray-400">End-to-end loan automation (XmartCredit), financial auditing frameworks, and banking applications</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-primary mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-semibold text-white mb-1">Database Architecture & Optimization</h3>
+                                <p class="text-gray-400">MSSQL, PostgreSQL, MySQL, SQLite design, stored procedures, views, and performance tuning</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-dark p-6 rounded-xl border border-gray-800">
+                        <h4 class="font-semibold text-white mb-3">Key Technologies:</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-primary/10 text-primary border border-primary/30 rounded-full text-sm">C# Advanced</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary border border-primary/30 rounded-full text-sm">.NET Core</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary border border-primary/30 rounded-full text-sm">Salesforce Apex</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary border border-primary/30 rounded-full text-sm">REST/SOAP</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary border border-primary/30 rounded-full text-sm">Entity Framework</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary border border-primary/30 rounded-full text-sm">WCF</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800" alt="Enterprise Development" class="rounded-2xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cloud Migration & ECM -->
+    <section id="cloud" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1 relative">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800" alt="Cloud Migration" class="rounded-2xl shadow-2xl">
+                </div>
+                <div class="order-1 lg:order-2">
+                    <div class="inline-block px-4 py-2 bg-secondary/20 text-secondary rounded-full text-sm font-semibold mb-4">
+                        SPECIALIZED EXPERTISE
+                    </div>
+                    <h2 class="text-4xl font-bold mb-6">
+                        Cloud Migration & <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">ECM Solutions</span>
+                    </h2>
+                    <p class="text-gray-300 text-lg mb-6">
+                        Decade-long partnership with Tzunami Inc delivering enterprise content migration solutions to global clients. We've migrated petabytes of data across complex ECM ecosystems with zero data loss.
+                    </p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-secondary mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-semibold text-white mb-1">SharePoint Migration (Tzunami Deployer)</h3>
+                                <p class="text-gray-400">Migrate from Hitachi CMP, Documentum, Livelink, eRoom, Lotus Notes, OpenText to SharePoint 2003-Online</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-secondary mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-semibold text-white mb-1">Cloud-to-Cloud Migration (Cloudsfer)</h3>
+                                <p class="text-gray-400">Seamless migration across 20+ cloud storage providers with automated backup services</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-secondary mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-semibold text-white mb-1">Permission & Security Management</h3>
+                                <p class="text-gray-400">Desktop tools for managing users, permissions, and security across SharePoint and Livelink environments</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-secondary mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-semibold text-white mb-1">Reverse Proxy & Integration</h3>
+                                <p class="text-gray-400">Custom reverse proxy solutions for OpenText Content Server and complex ECM integrations</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-dark-light p-6 rounded-xl border border-gray-800">
+                        <h4 class="font-semibold text-white mb-3">Supported ECM Platforms:</h4>
+                        <div class="grid grid-cols-2 gap-2 text-gray-300 text-sm">
+                            <div>• SharePoint (All Versions)</div>
+                            <div>• Hitachi CMP</div>
+                            <div>• Documentum</div>
+                            <div>• Livelink/OpenText</div>
+                            <div>• IBM Lotus Notes</div>
+                            <div>• eRoom</div>
+                            <div>• Confluence</div>
+                            <div>• Docushare</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI/ML Integration -->
+    <section id="ai" class="py-20 px-4 bg-dark-light">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-block px-4 py-2 bg-primary/20 text-primary rounded-full text-sm font-semibold mb-4">
+                        INNOVATION LAB
+                    </div>
+                    <h2 class="text-4xl font-bold mb-6">
+                        AI/ML <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Integration</span>
+                    </h2>
+                    <p class="text-gray-300 text-lg mb-6">
+                        Leverage cutting-edge artificial intelligence and machine learning to automate workflows, enhance code quality, and accelerate development cycles. Our AIOps expertise brings intelligent automation to your software engineering processes.
+                    </p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-primary mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-semibold text-white mb-1">AIOps & Automated Code Review</h3>
+                                <p class="text-gray-400">Specialized AI agents for multi-parameter quality analysis, automated code review, and developer performance tracking</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-primary mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-semibold text-white mb-1">Observability & Telemetry</h3>
+                                <p class="text-gray-400">AI-driven test matrices and telemetry integration with Datadog for real-time monitoring and insights</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-primary mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-semibold text-white mb-1">Deep Learning Solutions</h3>
+                                <p class="text-gray-400">Research-backed ML implementations including intrusion detection systems using bidirectional RNNs</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-primary mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-semibold text-white mb-1">Predictive Analytics</h3>
+                                <p class="text-gray-400">Machine learning models for pattern recognition, classification, and predictive insights</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-dark p-6 rounded-xl border border-gray-800">
+                        <h4 class="font-semibold text-white mb-3">AI/ML Stack:</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-primary/10 text-primary border border-primary/30 rounded-full text-sm">Python</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary border border-primary/30 rounded-full text-sm">TensorFlow</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary border border-primary/30 rounded-full text-sm">Datadog</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary border border-primary/30 rounded-full text-sm">SVM</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary border border-primary/30 rounded-full text-sm">RNN/LSTM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800" alt="AI/ML" class="rounded-2xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Consulting & Leadership -->
+    <section id="consulting" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1 relative">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800" alt="Consulting" class="rounded-2xl shadow-2xl">
+                </div>
+                <div class="order-1 lg:order-2">
+                    <div class="inline-block px-4 py-2 bg-secondary/20 text-secondary rounded-full text-sm font-semibold mb-4">
+                        STRATEGIC GUIDANCE
+                    </div>
+                    <h2 class="text-4xl font-bold mb-6">
+                        Technical Consulting & <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Leadership</span>
+                    </h2>
+                    <p class="text-gray-300 text-lg mb-6">
+                        Beyond code delivery, we provide strategic technical leadership to guide your engineering teams, architect scalable solutions, and establish best practices that ensure long-term success.
+                    </p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-secondary mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-semibold text-white mb-1">Agile Team Leadership</h3>
+                                <p class="text-gray-400">Proven experience leading 10+ engineer teams with Scrum methodologies and agile best practices</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-secondary mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-semibold text-white mb-1">Architecture & Design Review</h3>
+                                <p class="text-gray-400">Technical design artifacts, architectural decision-making, and cross-team dependency management</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-secondary mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-semibold text-white mb-1">Code Quality & Mentorship</h3>
+                                <p class="text-gray-400">Comprehensive code review, pair programming, and technical mentorship to elevate team capabilities</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-secondary mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-semibold text-white mb-1">DevOps & CI/CD Implementation</h3>
+                                <p class="text-gray-400">Deployment automation, monitoring strategies, and rollback planning using TFS, Git, and modern DevOps tools</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-dark-light p-6 rounded-xl border border-gray-800">
+                        <h4 class="font-semibold text-white mb-3">Engagement Models:</h4>
+                        <div class="space-y-2 text-gray-300">
+                            <div>• <strong>Staff Augmentation:</strong> Embed senior engineers into your team</div>
+                            <div>• <strong>Project-Based:</strong> End-to-end delivery with defined milestones</div>
+                            <div>• <strong>Retainer Consulting:</strong> Ongoing technical advisory and support</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services -->
+    <section class="py-20 px-4 bg-dark-light">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">
+                    Additional <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Capabilities</span>
+                </h2>
+                <p class="text-gray-400 text-lg">Specialized solutions across diverse technical domains</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-6 bg-dark rounded-xl border border-gray-800 hover:border-primary transition-all">
+                    <h3 class="text-xl font-bold mb-3 text-white">Web Application Development</h3>
+                    <p class="text-gray-400 mb-4">ASP.NET MVC, React, JavaScript, HTML5/CSS3, Kendo UI, responsive design</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">React</span>
+                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">ASP.NET</span>
+                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Kendo UI</span>
+                    </div>
+                </div>
+
+                <div class="p-6 bg-dark rounded-xl border border-gray-800 hover:border-primary transition-all">
+                    <h3 class="text-xl font-bold mb-3 text-white">Desktop Applications</h3>
+                    <p class="text-gray-400 mb-4">WinForms, WPF, Metro Framework, Windows Services, cross-platform solutions</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">WPF</span>
+                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">WinForms</span>
+                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">.NET</span>
+                    </div>
+                </div>
+
+                <div class="p-6 bg-dark rounded-xl border border-gray-800 hover:border-primary transition-all">
+                    <h3 class="text-xl font-bold mb-3 text-white">API Development</h3>
+                    <p class="text-gray-400 mb-4">RESTful APIs, SOAP services, OAuth authentication, microservices architecture</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">REST</span>
+                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">OAuth</span>
+                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Microservices</span>
+                    </div>
+                </div>
+
+                <div class="p-6 bg-dark rounded-xl border border-gray-800 hover:border-primary transition-all">
+                    <h3 class="text-xl font-bold mb-3 text-white">Quality Assurance</h3>
+                    <p class="text-gray-400 mb-4">Automated testing, code review processes, performance optimization, bug fixing</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Testing</span>
+                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">QA</span>
+                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Optimization</span>
+                    </div>
+                </div>
+
+                <div class="p-6 bg-dark rounded-xl border border-gray-800 hover:border-primary transition-all">
+                    <h3 class="text-xl font-bold mb-3 text-white">Legacy System Modernization</h3>
+                    <p class="text-gray-400 mb-4">Upgrade legacy applications, refactoring, migration to modern frameworks</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Refactoring</span>
+                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Migration</span>
+                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Upgrade</span>
+                    </div>
+                </div>
+
+                <div class="p-6 bg-dark rounded-xl border border-gray-800 hover:border-primary transition-all">
+                    <h3 class="text-xl font-bold mb-3 text-white">Technical Documentation</h3>
+                    <p class="text-gray-400 mb-4">Architecture diagrams, API documentation, process documentation, knowledge transfer</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Documentation</span>
+                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Diagrams</span>
+                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Training</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-4 bg-gradient-to-r from-primary to-secondary">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white">Let's Build Something Exceptional</h2>
+            <p class="text-xl text-white/90 mb-8">Schedule a consultation to discuss your technical challenges and explore how our expertise can drive your success</p>
+            <a href="contact.html" class="inline-block px-8 py-4 bg-white text-primary font-semibold rounded-lg hover:shadow-2xl transition-all transform hover:-translate-y-1">
+                Get Started Today
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-light border-t border-gray-800 py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-4">
+                        AGR Tech Pvt. Ltd.
+                    </h3>
+                    <p class="text-gray-400">Enterprise software excellence through innovation and expertise</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-primary transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-primary transition-colors">About</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-primary transition-colors">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#enterprise" class="text-gray-400 hover:text-primary transition-colors">Enterprise Development</a></li>
+                        <li><a href="services.html#cloud" class="text-gray-400 hover:text-primary transition-colors">Cloud Migration</a></li>
+                        <li><a href="services.html#ai" class="text-gray-400 hover:text-primary transition-colors">AI/ML Solutions</a></li>
+                        <li><a href="services.html#consulting" class="text-gray-400 hover:text-primary transition-colors">Technical Consulting</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Lalitpur, Nepal</li>
+                        <li>+977-984-1183620</li>
+                        <li>info@agrtechs.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 AGR Tech Pvt. Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
